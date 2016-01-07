@@ -2,7 +2,7 @@
 
 ### This is a Slack chat/irc bot written in Python (2.6 / 2.7).
 
-This is a scraper and notifier for games being played by Games Done Quick (AGDQ and SGDQ)
+This is a skeleton for a slack-bot that connects to a given chat over ssl.
 
 ## Installation
 
