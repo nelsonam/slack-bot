@@ -1,4 +1,5 @@
 import src.lib.channels as channels
+import src.lib.cat_pictures as cat_pictures
 import json
 global config
 
