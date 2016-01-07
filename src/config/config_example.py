@@ -1,4 +1,3 @@
-import src.lib.channels as channels
 import src.lib.cat_pictures as cat_pictures
 import json
 global config
@@ -12,8 +11,7 @@ YOURSLACKCHANNEL.slack.com/account/gateways
 
 slack_token = ""
 # Slack Token obtained from https://api.slack.com/web#basics
-channels_to_join = channels.initial_channels(slack_token)
-channels.slack_token = slack_token
+channels_to_join = ["#catpixxx"]
 channel_dict = {"channels": channels_to_join}
 
 with open("src/config/channels.json", "w") as f:
