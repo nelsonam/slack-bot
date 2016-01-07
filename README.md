@@ -4,6 +4,8 @@
 
 This is a skeleton for a slack-bot that connects to a given chat over ssl.
 
+All it does is release cat pictures every five seconds.
+
 ## Installation
 
 ### Virtual Environment
@@ -43,6 +45,8 @@ Make a copy of the example config file:
 
 Head into src/config/config.py and enter the channel you'd like to join, your login credentials, and your Slack API Token (descriptions in config file).
 
+If you'd like to enable the cat pictures cron job, set the job from `False` to `True`
+in `config["cron"]["#CHANNELNAME"]`.
 
 ### To run:
 

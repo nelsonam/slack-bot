@@ -10,7 +10,7 @@ import ssl
 threshold = 5 * 60  # five minutes, make this whatever you want
 
 
-class irc:
+class IRC:
     def __init__(self, config):
         self.config = config
         self.ircBuffer = ""

@@ -38,7 +38,7 @@ config = {
     # Cron jobs.
     "cron": {
         "#general": [
-
+            (5, False, cat_pictures.cron)
         ],
     },
 }

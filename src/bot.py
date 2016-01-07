@@ -2,6 +2,8 @@
 basic slack-bot created by Shane Engelman <me@5h4n3.com>
 """
 
+# Sends cat pictures on a timer
+
 import lib.irc as irc_
 import sys
 import datetime
@@ -19,12 +21,12 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 
 
-class Roboraj(object):
+class Roboraj:
 
     def __init__(self, config):
         self.config = config  # use config.py as this instance's config
-        self.irc = irc_.irc(config)  # use irc.py for socket connections
-        incoming_data.initialize(self.irc, self.config.get('channels', {}))
+        self.irc = irc_.IRC(config)  # use irc.py for socket connections
+        cron.initialize(self.irc, self.config.get("cron", {}))
 
     def run(self):
         while True:  # main event loop

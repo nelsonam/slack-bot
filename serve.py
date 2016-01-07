@@ -2,7 +2,6 @@
 
 from sys import argv
 from src.bot import *
-from src.config.config import *
-import datetime
+from src.config.config import config
 
 bot = Roboraj(config).run()
