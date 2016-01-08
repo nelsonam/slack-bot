@@ -41,7 +41,7 @@ Make a copy of the example config file:
 
 #### Config File
 
-Head into src/config/config.py and enter the channel you'd like to join, your login credentials, and your Slack API Token (descriptions in config file).
+Head into `src/config/config.py` and enter the channel you'd like to join, your login credentials, and your Slack API Token (descriptions in config file).
 
 
 ### To run:
